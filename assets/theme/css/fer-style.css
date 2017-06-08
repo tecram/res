@@ -46,8 +46,7 @@
   margin-bottom: 20px; }
   .blog-list .itm {
     width: 100%;
-    display: inline-block;
-    margin-bottom: 10px; }
+    display: inline-block; }
     .blog-list .itm .img {
       height: 130px;
       display: block;
