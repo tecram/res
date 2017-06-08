@@ -1,6 +1,9 @@
 .text-center {
   text-align: center; }
 
+.margin-bottom-m {
+  margin-bottom: 30px; }
+
 .itm-blog {
   margin-top: 15px; }
   .itm-blog h4 {
@@ -108,7 +111,7 @@
   margin-bottom: 40px; }
 
 .box-module {
-  height: 250px; }
+  height: 300px; }
   .box-module:after {
     content: '';
     display: block;
@@ -123,6 +126,10 @@
     background-color: rgba(0, 46, 90, 0.6); }
   .box-module.fill:after {
     background-color: #002e5a; }
+  .box-module.no-ovl:after {
+    display: none; }
+  .box-module.no-ovl h3 {
+    color: #002E5A; }
   .box-module img.bg {
     position: absolute;
     top: 0;
@@ -133,7 +140,7 @@
     height: 100%;
     z-index: 0; }
   .box-module h3 {
-    padding-top: 60px;
+    padding-top: 100px;
     color: #fff; }
   .box-module p {
     color: #fff; }

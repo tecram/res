@@ -1,5 +1,5 @@
 .text-center{text-align: center;}
-
+.margin-bottom-m{margin-bottom: 30px;}
 .itm-blog{
 	margin-top: 15px;
 	h4{
@@ -126,7 +126,7 @@
 	}
 }
 .box-module{
-	height: 250px;
+	height: 300px;
 	&:after{
 		content: '';
 		display: block;
@@ -145,6 +145,14 @@
 			background-color: rgba(0,46,90,1);
 		}
 	}
+	&.no-ovl{
+		&:after{
+			display: none;
+		}
+		h3{
+			color: #002E5A;
+		}
+	}
 	img.bg{
 		position: absolute;
 		top: 0;
@@ -156,7 +164,7 @@
 		z-index: 0;
 	}
 	h3{
-		padding-top: 60px;
+		padding-top: 100px;
 		color: #fff;
 	}
 	p{
