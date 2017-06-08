@@ -2223,7 +2223,6 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   display: block;
   color: #002E5A;
   font-size: 20px;
-  font-weight: 700;
   width: 100%;
   margin: 30px auto;
 }
@@ -2242,7 +2241,7 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 }
 
 .blog-small-module .socials {
-  
+  font-weight: 700;
 }
 
 .blog-small-module ul {
