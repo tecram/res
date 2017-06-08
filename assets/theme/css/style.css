@@ -2156,7 +2156,7 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 
 .header-socials {
   text-align: right;
-  margin: 10px 0 0 0;
+  margin: 10px 0 10px 0;
   padding: 0;
 }
 
