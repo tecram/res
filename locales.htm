@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="assets/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/fer-style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
-  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf0nrbD6gurYm4Cj3O9sfbkubEXZHB4tQ&v=3.0&sensor=true&language=ee" type="text/javascript"></script>
+
 </head>
 <body>
 <section id="menu-1w">
@@ -87,7 +88,15 @@
 </section>
 
 <section class="mbr-section mbr-section-nopadding" id="map1-2i">
-    <div class="mbr-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJ9fKTlGe2vJURKWFeviJ7LPs" allowfullscreen=""></iframe></div>
+    <div class="mbr-map">
+      <select id="type" onchange="filterMarkers(this.value);">
+          <option value="">Please select category</option>
+          <option value="second">second</option>
+          <option value="car">car</option>
+          <option value="third">third</option>
+      </select>
+      <div id="map-canvas" class="google-map"></div>
+    </div>
 </section>
 
 <section class="mbr-section mbr-section-nopadding mbr-figure--caption-outside-bottom" id="image1-2k">
@@ -129,6 +138,92 @@
   <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+
+  <script>
+        var gmarkers1 = [];
+        var markers1 = [];
+        var infowindow = new google.maps.InfoWindow({
+            content: ''
+        });
+
+        // Our markers
+        markers1 = [
+            ['0', 'Title', 52.4357808, 4.991315699999973, 'car'],
+            ['1', 'Title', 52.4357808, 4.981315699999973, 'third'],
+            ['2', 'Title', 52.4555687, 5.039231599999994, 'car'],
+            ['3', 'Title', 52.4555687, 5.029231599999994, 'second']
+        ];
+
+        /**
+         * Function to init map
+         */
+
+        function initialize() {
+            var center = new google.maps.LatLng(52.4357808, 4.991315699999973);
+            var mapOptions = {
+                zoom: 12,
+                center: center,
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            for (i = 0; i < markers1.length; i++) {
+                addMarker(markers1[i]);
+            }
+        }
+
+        /**
+         * Function to add marker to map
+         */
+
+        function addMarker(marker) {
+            var category = marker[4];
+            var title = marker[1];
+            var pos = new google.maps.LatLng(marker[2], marker[3]);
+            var content = marker[1];
+
+            marker1 = new google.maps.Marker({
+                title: title,
+                position: pos,
+                category: category,
+                map: map
+            });
+
+            gmarkers1.push(marker1);
+
+            // Marker click listener
+            google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
+                return function () {
+                    console.log('Gmarker 1 gets pushed');
+                    infowindow.setContent(content);
+                    infowindow.open(map, marker1);
+                    map.panTo(this.getPosition());
+                    map.setZoom(15);
+                }
+            })(marker1, content));
+        }
+
+        /**
+         * Function to filter markers by category
+         */
+
+        filterMarkers = function (category) {
+            for (i = 0; i < markers1.length; i++) {
+                marker = gmarkers1[i];
+                // If is same category or category not picked
+                if (marker.category == category || category.length === 0) {
+                    marker.setVisible(true);
+                }
+                // Categories don't match 
+                else {
+                    marker.setVisible(false);
+                }
+            }
+        }
+
+        // Init map
+        initialize();
+      </script>
   
   
   <input name="animation" type="hidden">
