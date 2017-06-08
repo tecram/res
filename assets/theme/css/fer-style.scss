@@ -13,7 +13,7 @@
 		width: 100%;
 	}
 	p{
-		$font-size: 1rem;
+		$font-size: .9rem;
 		$line-height: 1.4;
 		$lines-to-show: 6;
 		display: block;
@@ -26,6 +26,7 @@
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		font-family: 'Montserrat', sans-serif;
 	}
 	a.more{
 		text-transform: uppercase;
@@ -53,6 +54,21 @@
 		a.more{
 			font-size: 15px;
 			padding: 20px 56px;
+		}
+		p{
+			$font-size: 1rem;
+			$line-height: 1.4;
+			$lines-to-show: 6;
+			display: block;
+			display: -webkit-box;
+			margin: 10px 0;
+			height: $font-size*$line-height*$lines-to-show;
+			font-size: $font-size;
+			line-height: $line-height;
+			-webkit-line-clamp: $lines-to-show;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 }
