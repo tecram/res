@@ -2155,7 +2155,6 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 }
 
 .header-socials {
-  display: block;
   text-align: right;
   margin: 10px 0 0 0;
   padding: 0;
@@ -2185,8 +2184,13 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   padding: 0;
 }
 
+.more-module .more-left {
+  width: 40%;
+}
+
 .more-module .more-center {
   text-align: center;
+  width: 20%;
 }
 
 .more-module .more-center .more-center-content {
@@ -2205,8 +2209,6 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 
 .more-module .more-center ul li {
   list-style: none;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .valign {
@@ -2215,4 +2217,58 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   vertical-align: middle;
   margin: 0;
   padding: 0;
+}
+
+.blog-small-module {
+  display: block;
+  color: #002E5A;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+  .blog-small-module {
+    font-size: 12px;
+  }
+  .blog-small-module ul li {
+    margin: 0 0 0 0;
+  }
+  .blog-small-module img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.blog-small-module .socials {
+  
+}
+
+.blog-small-module ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.blog-small-module ul li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.blog-small-module .small-blog {
+  
+}
+
+.emails .lead a {
+  color: #000;
+}
+
+.emails .lead a:hover {
+  color: #3c3c3c;
+}
+
+.contact-form textarea.form-control {
+  resize: none;
 }
