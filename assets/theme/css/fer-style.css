@@ -1,0 +1,82 @@
+.itm-blog {
+  margin-top: 15px; }
+  .itm-blog h4 {
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    width: 100%; }
+  .itm-blog img {
+    width: 100%; }
+  .itm-blog p {
+    display: block;
+    display: -webkit-box;
+    margin: 10px 0;
+    height: 8.4rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .itm-blog a.more {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #002E5A;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 12px;
+    display: inline-block; }
+    .itm-blog a.more:hover {
+      background-color: #54718f;
+      color: #fff; }
+  .itm-blog.big h4 {
+    font-size: 18px;
+    padding: 25px;
+    min-height: 88px;
+    display: inline-block; }
+  .itm-blog.big img {
+    max-height: 390px; }
+  .itm-blog.big a.more {
+    font-size: 15px;
+    padding: 20px 56px; }
+
+.blog-list {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+  .blog-list .itm {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px; }
+    .blog-list .itm .img {
+      height: 130px;
+      display: block;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .blog-list .itm .title {
+      display: table;
+      height: 130px; }
+      .blog-list .itm .title h4 {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 20px; }
+        @media only screen and (max-width: 768px) {
+          .blog-list .itm .title h4 {
+            font-size: 15px; } }
+        .blog-list .itm .title h4 a {
+          padding: 0 40px;
+          color: #fff;
+          transition: all .3s ease-out; }
+          @media only screen and (max-width: 768px) {
+            .blog-list .itm .title h4 a {
+              padding: 0 20px; } }
+          .blog-list .itm .title h4 a:hover {
+            text-decoration: none;
+            padding: 0 30px; }
+            @media only screen and (max-width: 768px) {
+              .blog-list .itm .title h4 a:hover {
+                padding: 0 10px; } }
+
+/*# sourceMappingURL=fer-style.css.map */
