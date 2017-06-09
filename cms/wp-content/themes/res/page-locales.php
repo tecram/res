@@ -130,12 +130,14 @@ $count=0;
             var title = marker[1];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
             var content = marker[1];
+            var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
 
             marker1 = new google.maps.Marker({
                 title: title,
                 position: pos,
                 category: category,
-                map: map
+                map: map,
+                icon: markerIcon
             });
 
             gmarkers1.push(marker1);
