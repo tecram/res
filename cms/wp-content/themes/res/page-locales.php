@@ -145,7 +145,6 @@ $count=0;
             // Marker click listener
             google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
                 return function () {
-                    console.log('Gmarker 1 gets pushed');
                     infowindow.setContent(content);
                     infowindow.open(map, marker1);
                     map.panTo(this.getPosition());
