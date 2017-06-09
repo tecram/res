@@ -19,6 +19,7 @@ get_header(); ?>
             <div>
                 <ol class="carousel-indicators">
                     <li data-app-prevent-settings="" data-target="#slider-3d" class="active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider-3d" data-slide-to="1"></li>
+                    <li data-app-prevent-settings="" data-target="#slider-3d" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/slider-home-1.jpg);">
@@ -36,7 +37,8 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-                    </div><div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/slider-home-2.jpg);">
+                    </div>
+                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/slider-home-2.jpg?v=2);">
                         <div class="mbr-table-cell">
                             
                             <div class="container-slide container">
@@ -51,13 +53,14 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-                    </div><div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/home3-2000x1333-80.png);">
+                    </div>
+                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/slider-home-3.jpg);">
                         <div class="mbr-table-cell">
                             
                             <div class="container-slide container">
                                 
                                 <div class="row">
-                                    <div class="col-md-8 col-md-offset-3 text-xs-right">
+                                    <div class="col-md-8 col-md-offset-1">
                                         
                                         
 
