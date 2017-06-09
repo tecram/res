@@ -18,10 +18,10 @@ get_header(); ?>
         <div>
             <div>
                 <ol class="carousel-indicators">
-                    <li data-app-prevent-settings="" data-target="#slider-3d" class="active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider-3d" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider-3d" data-slide-to="2"></li>
+                    <li data-app-prevent-settings="" data-target="#slider-3d" class="active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider-3d" data-slide-to="1"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/home1-2000x1333-54.png);">
+                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/slider-home-1.jpg);">
                         <div class="mbr-table-cell">
                             
                             <div class="container-slide container">
@@ -36,7 +36,7 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-                    </div><div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/home2-2000x1333-86.png);">
+                    </div><div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(<?php echo DIR; ?>/assets/images/slider-home-2.jpg);">
                         <div class="mbr-table-cell">
                             
                             <div class="container-slide container">
