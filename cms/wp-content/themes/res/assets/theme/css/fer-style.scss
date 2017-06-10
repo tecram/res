@@ -185,3 +185,29 @@
 	}
 
 }
+.meat-module{
+	margin: 15px auto;
+	h2{
+		color: rgba(0,46,90,1);
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 1.2rem;
+		margin-top: 20px;
+	}
+	area{
+		outline: 1px dashed rgba(0,46,90,1) ;
+		fill: rgba(0,46,90,1);
+	}
+	.content{
+		h3{
+			margin-top: 15px;
+			color: rgba(0,46,90,1);
+			font-weight: 600;
+			font-size: 16px;
+		}
+		p{
+			color: rgba(0,46,90,1);
+			font-size: 12px;
+		}
+	}
+}
