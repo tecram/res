@@ -97,12 +97,8 @@ get_header(); ?>
               <div class="mbr-table-cell col-md-5 text-xs-center text-md-right content-size">
                   <h3 class="mbr-section-title display-2">RES.<br>Mucho más que la carnicería de tu barrio.</h3>
                   <div class="lead">
-
                     <p><strong>Sabemos lo que hacemos. </strong>Porque somos una empresa argentina con  gran experiencia en el mercado de la carne. Y transmitimos ese conocimiento formando y capacitando a nuevas generaciones de carniceros, que dignifiquen el oficio y reconozcan el valor de brindarte cada día un mejor servicio.<br><br><strong>Amamos lo que hacemos.</strong> Porque lo hacemos con pasíon y mucho orgullo, para que cada vez que visites uno de nuestros locales vivas una experiencia que refleje los valores que nos guían: la honestidad de nuestra tarea, las ganas de superarnos día a día, la búsqueda constante de la excelencia, el compromiso asumido con cada cliente y nuestra capacidad de trabajo.<br><br><strong>Todo lo hacemos por vos.</strong> Porque antes de ser una gran empresa con más de 30 sucursales en la Ciudad de Buenos Aires, queremos ser la carnicería de tu barrio, TU carnicero. Porque nos encanta ser ese lugar en el que te reciben con una sonrisa y te ofrecen productos de calidad para compartir con los que más querés.<br></p>
-
                   </div>
-
-                  <div><a class="btn btn-primary" href="https://mobirise.com">MORE</a></div>
               </div>
 
               <div class="mbr-table-cell mbr-left-padding-md-up mbr-top col-md-7 image-size" style="width: 51%;">
