@@ -133,5 +133,11 @@ get_header(); ?>
         </div>
     </div>
 </section>
+<section id="work" class="mbr-section mbr-section-nopadding mbr-figure--caption-outside-bottom" id="image1-3h">
+    <div class="mbr-figure">
+        <div><img src="<?php echo DIR; ?>/assets/images/queresTrabajar.png"></div>
+        
+    </div>
+</section>
 <?php get_template_part("parts/bottom"); ?>
 <?php get_footer(); ?>
