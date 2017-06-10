@@ -135,7 +135,12 @@ get_header(); ?>
 </section>
 <section id="work" class="mbr-section mbr-section-nopadding mbr-figure--caption-outside-bottom" id="image1-3h">
     <div class="mbr-figure">
-        <div><img src="<?php echo DIR; ?>/assets/images/queresTrabajar.png"></div>
+        <div>
+            <img src="<?php echo DIR; ?>/assets/images/queresTrabajar.jpg" class="img-fluid" usemap="#trabaja-map">
+            <map name="trabaja-map">
+                <area alt="Trabaja con Nosotros!" title="Trabaja con Nosotros!" href="mailto:rrhh@res.com.ar" coords="538,425,365,396" shape="rect">
+            </map>
+        </div>
         
     </div>
 </section>

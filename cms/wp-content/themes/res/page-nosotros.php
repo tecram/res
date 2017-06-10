@@ -268,7 +268,6 @@ get_header(); ?>
 
 <?php get_template_part("parts/bottom"); ?>
 <?php get_footer(); ?>
-<script src="<?php echo DIR; ?>/assets/rwdImageMaps/jquery.rwdImageMaps.js"></script>
 
 <script type="text/javascript">
     var cowData = {
@@ -311,7 +310,6 @@ get_header(); ?>
         4:'<h3><span>4</span> Alas</h3><p>Su textura la asemeja a un muslo pequeño, es jugosa y hoy está presente en muchas recetas deliciosas.</p>',
     };
     $(document).ready(function(e) {
-        $('map').imageMapResize();
         $('#cow-map area').on('click', function(e) {
             e.preventDefault();
             var id = $(this).attr('data-id');

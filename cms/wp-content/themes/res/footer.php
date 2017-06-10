@@ -41,6 +41,7 @@
   <script src="<?php echo DIR; ?>/assets/dropdown/js/script.min.js"></script>
   <script src="<?php echo DIR; ?>/assets/touchSwipe/jquery.touchSwipe.min.js"></script>
   <script src="<?php echo DIR; ?>/assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+  <script src="<?php echo DIR; ?>/assets/rwdImageMaps/jquery.rwdImageMaps.js"></script>
   <script src="<?php echo DIR; ?>/assets/theme/js/script.js"></script>
   
   

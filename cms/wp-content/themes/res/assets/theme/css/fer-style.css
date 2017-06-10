@@ -164,8 +164,7 @@
     font-size: 1.2rem;
     margin-top: 20px; }
   .meat-module area {
-    outline: 1px dashed #002e5a;
-    fill: #002e5a; }
+    outline: 1px solid #002e5a; }
   .meat-module .content h3 {
     margin-top: 15px;
     color: #002e5a;
