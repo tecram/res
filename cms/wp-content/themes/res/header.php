@@ -25,6 +25,14 @@ $franquicias=get_permalink(12);
 $locales=get_permalink(6);
 $nosotros=get_permalink(8);
 
+global $facebook;
+global $instagram;
+global $youtube;
+
+$facebook=get_field("facebook",4);
+$instagram=get_field("instagram",4);
+$youtube=get_field("youtube",4);
+
 ?>
 <html>
 <head>
@@ -73,9 +81,15 @@ $nosotros=get_permalink(8);
                     </button>
 
                     <ul class="header-socials hidden-sm-down">
-                      <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/facebook-icon.png"></a></li>
-                      <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/instagram-icon.png"></a></li>
-                      <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/youtube-icon.png"></a></li>
+                      <?php if($facebook != ""){ ?>
+                      <li><a href="<?php echo $facebook; ?>" target="_BLANK"><img src="<?php echo DIR; ?>/assets/images/facebook-icon.png"></a></li>
+                      <?php } ?>
+                      <?php if($instagram != ""){ ?>
+                      <li><a href="<?php echo $instagram; ?>" target="_BLANK"><img src="<?php echo DIR; ?>/assets/images/instagram-icon.png"></a></li>
+                      <?php } ?>
+                      <?php if($youtube != ""){ ?>
+                      <li><a href="<?php echo $youtube; ?>" target="_BLANK"><img src="<?php echo DIR; ?>/assets/images/youtube-icon.png"></a></li>
+                      <?php } ?>
                     </ul>
 
                     <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="<?php echo $locales; ?>">LOCALES</a></li><li class="nav-item dropdown"><a class="nav-link link" href="<?php echo $nosotros; ?>" aria-expanded="false">NOSOTROS</a></li><li class="nav-item"><a class="nav-link link" href="<?php echo $blog; ?>">BLOG</a></li><li class="nav-item"><a class="nav-link link" href="<?php echo $franquicias; ?>">FRANQUICIAS</a></li><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" href="<?php echo $contacto; ?>" data-toggle="dropdown-submenu" aria-expanded="true">CONTACTO</a><div class="dropdown-menu"><a class="dropdown-item" href="<?php echo $contacto; ?>">Contacto</a><a class="dropdown-item" href="<?php echo $contacto; ?>#work">Trabaja con Nosotros</a></div></li></ul>

@@ -5,6 +5,10 @@
   );
 
 $postlist = new WP_Query($artargs);
+
+global $facebook;
+global $instagram;
+global $youtube;
 ?>
 
 <div class="margin-bottom-m">
@@ -26,9 +30,15 @@ $postlist = new WP_Query($artargs);
       </div>
       <div class="text-center">
         <ul>
-          <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/facebook-icon.png"></a></li>
-          <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/instagram-icon.png"></a></li>
-          <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/youtube-icon.png"></a></li>
+          <?php if($facebook != ""){ ?>
+            <li><a href="<?php echo $facebook; ?>" target="_BLANK"><img src="<?php echo DIR; ?>/assets/images/facebook-icon.png"></a></li>
+          <?php } ?>
+          <?php if($instagram != ""){ ?>
+            <li><a href="<?php echo $instagram; ?>" target="_BLANK"><img src="<?php echo DIR; ?>/assets/images/instagram-icon.png"></a></li>
+          <?php } ?>
+          <?php if($youtube != ""){ ?>
+            <li><a href="<?php echo $youtube; ?>" target="_BLANK"><img src="<?php echo DIR; ?>/assets/images/youtube-icon.png"></a></li>
+          <?php } ?>
         </ul>
       </div>
     </div>
@@ -52,9 +62,15 @@ $postlist = new WP_Query($artargs);
     <div class="socials col-md-5">
       <p>Todas las novedades están en nuestro Blog y en nuestras redes sociales</p>
       <ul>
-        <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/facebook-icon.png"></a></li>
-        <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/instagram-icon.png"></a></li>
-        <li><a href="javascript:void(0)"><img src="<?php echo DIR; ?>/assets/images/youtube-icon.png"></a></li>
+       <?php if($facebook != ""){ ?>
+          <li><a href="<?php echo $facebook; ?>"><img src="<?php echo DIR; ?>/assets/images/facebook-icon.png"></a></li>
+        <?php } ?>
+        <?php if($instagram != ""){ ?>
+          <li><a href="<?php echo $instagram; ?>"><img src="<?php echo DIR; ?>/assets/images/instagram-icon.png"></a></li>
+        <?php } ?>
+        <?php if($youtube != ""){ ?>
+          <li><a href="<?php echo $youtube; ?>"><img src="<?php echo DIR; ?>/assets/images/youtube-icon.png"></a></li>
+        <?php } ?>
       </ul>
     </div>
     <div class="small-blog col-md-7">

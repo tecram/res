@@ -86,11 +86,11 @@ get_header(); ?>
 
 
                     <div data-form-alert="true">
-                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">¡Gracias por comunicarte!</div>
+                        <div id="tks" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center" style="display:none;">¡Gracias por comunicarte!</div>
                     </div>
 
 
-                    <form action="#" method="post" data-form-title="CONTACT FORM">
+                    <form id="franquicias" action="#" method="post" data-form-title="CONTACT FORM">
 
                         <input type="hidden" value="ZG41iQcQABV87ZVAzJ3DgJoxC7vxoAWjHRPKs7UUWbOHNL9Wlr/g+qbcb8OzldlQpyqHsRBZkRHsKzQwozYtedWLENncvUydQQD+7orb1QlWOU0r8xfUYJtx0YOLd7wp" data-form-email="true">
 
@@ -145,3 +145,25 @@ get_header(); ?>
 </section>
 <?php get_template_part("parts/bottom"); ?>
 <?php get_footer(); ?>
+<script type="text/javascript">
+    $("#franquicias").submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+            url: '<?php echo DIR; ?>/franquicias-send.php',
+            type: 'POST',
+            data: $("#franquicias").serialize()
+        })
+        .done(function(response) {
+            //console.log(response);
+            $("#tks").show();
+            $("#franquicias")[0].reset();
+        })
+        .fail(function() {
+            
+        })
+        .always(function() {
+
+        })
+        
+    });
+</script>
