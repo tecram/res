@@ -144,6 +144,9 @@
     color: #fff; }
   .box-module p {
     color: #fff; }
+  .box-module a {
+    color: #fff;
+  }
   .box-module > div {
     z-index: 2;
     position: relative; }

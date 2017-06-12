@@ -92,7 +92,29 @@ $youtube=get_field("youtube",4);
                       <?php } ?>
                     </ul>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="<?php echo $locales; ?>">LOCALES</a></li><li class="nav-item dropdown"><a class="nav-link link" href="<?php echo $nosotros; ?>" aria-expanded="false">NOSOTROS</a></li><li class="nav-item"><a class="nav-link link" href="<?php echo $blog; ?>">BLOG</a></li><li class="nav-item"><a class="nav-link link" href="<?php echo $franquicias; ?>">FRANQUICIAS</a></li><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" href="<?php echo $contacto; ?>" data-toggle="dropdown-submenu" aria-expanded="true">CONTACTO</a><div class="dropdown-menu"><a class="dropdown-item" href="<?php echo $contacto; ?>">Contacto</a><a class="dropdown-item" href="<?php echo $contacto; ?>#work">Trabaja con Nosotros</a></div></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                      <li class="nav-item"><a class="nav-link link" href="<?php echo $locales; ?>">LOCALES</a></li>
+                      <!-- <li class="nav-item dropdown"><a class="nav-link link" href="<?php echo $nosotros; ?>" aria-expanded="false">NOSOTROS</a></li> -->
+
+                      <li class="nav-item dropdown open">
+                        <a class="nav-link link dropdown-toggle" href="<?php echo $nosotros; ?>" data-toggle="dropdown-submenu" aria-expanded="true">NOSOTROS</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="<?php echo $nosotros; ?>">Nosotros</a>
+                          <a class="dropdown-item" href="<?php echo $nosotros; ?>#content1-3">Nuestra Empresa</a>
+                          <a class="dropdown-item" href="<?php echo $nosotros; ?>#content1-h">Nuestros Productos</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item"><a class="nav-link link" href="<?php echo $blog; ?>">BLOG</a></li>
+                      <li class="nav-item"><a class="nav-link link" href="<?php echo $franquicias; ?>">FRANQUICIAS</a></li>
+                      <li class="nav-item dropdown open">
+                        <a class="nav-link link dropdown-toggle" href="<?php echo $contacto; ?>" data-toggle="dropdown-submenu" aria-expanded="true">CONTACTO</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="<?php echo $contacto; ?>">Contacto</a>
+                          <a class="dropdown-item" href="<?php echo $contacto; ?>#work">Trabaja con Nosotros</a>
+                        </div>
+                      </li>
+                    </ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
