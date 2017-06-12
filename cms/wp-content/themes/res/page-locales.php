@@ -17,6 +17,8 @@ get_header();
 $pointsarg=array(
   'nopaging' => true,
   'post_type'   => 'local',
+  'orderby' => 'title',
+  'order' => 'ASC',
   );
 
 $point=new WP_Query($pointsarg);
