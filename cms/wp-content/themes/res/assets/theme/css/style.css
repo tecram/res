@@ -2275,3 +2275,27 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 .contact-form textarea.form-control {
   resize: none;
 }
+
+#form2-2j {
+    padding-bottom: 0;
+    margin: 0;
+    height: 50px;
+}
+
+#map1-2i select {
+    border: solid 1px #ccc;
+    height: 40px;
+    width: 320px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    display: block;
+    color: #002e59;
+    outline: none;
+    font-weight: 700;
+}
+
+#map1-2i select option {
+    color: #002e59;
+    outline: none;
+    font-weight: 700;
+}
