@@ -46,10 +46,10 @@ global $youtube;
   <div class="col-md-4">
     <div class="box-module row">
       <div class="text-center">
-        <h3><strong>HACEMOS<br>ESCUELA</strong></h3>
+        <h3><a href="/contacto#content1-17"><strong>HACEMOS<br>ESCUELA</strong></a></h3>
       </div>
       <div class="text-center">
-        <p>Trabaja con nosotros</p>
+        <p><a href="/contacto#content1-17">Trabaja con nosotros</a></p>
       </div>
       <img src="<?php echo DIR; ?>/assets/images/trabaja.jpg" alt="" class="bg">
     </div>
