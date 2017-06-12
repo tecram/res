@@ -60,8 +60,9 @@ $count=0;
 
             $name=get_field("nombre");
             $location=get_field("ubicacion");
+            $direccion=get_field("direccion");
          ?>
-            <option value="" data-lat="<?php echo $location["lat"]; ?>" data-long="<?php echo $location["lng"]; ?>"><?php echo $name; ?></option>
+            <option value="" data-lat="<?php echo $location["lat"]; ?>" data-long="<?php echo $location["lng"]; ?>"><?php echo $name; ?> - <?php echo $direccion; ?></option>
         <?php 
             $count++;
             endwhile; 

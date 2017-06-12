@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	$mail=new PHPMailer();
 	$mail->From="noreply@res.com.ar";
 	$mail->FromName = 'Web RES';
-	$mail->addAddress("donpiluso@yahoo.com.ar");  // Add a recipient
+	$mail->addAddress("info@res.com.ar");  // Add a recipient
 	$mail->Subject = $subject;
 	$mail->isHTML();
 	$mail->Body=$message;
