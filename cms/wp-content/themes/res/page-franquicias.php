@@ -143,7 +143,7 @@ get_header(); ?>
         
     </div>
 </section>
-<?php get_template_part("parts/bottom"); ?>
+<?php get_template_part("parts/bottom","contact"); ?>
 <?php get_footer(); ?>
 <script type="text/javascript">
     $("#franquicias").submit(function(event) {
