@@ -101,7 +101,7 @@ $youtube=get_field("youtube",4);
                         <div class="dropdown-menu">
                           <a class="dropdown-item" href="<?php echo $nosotros; ?>">Nosotros</a>
                           <a class="dropdown-item" href="<?php echo $nosotros; ?>#content1-3">Nuestra Empresa</a>
-                          <a class="dropdown-item" href="<?php echo $nosotros; ?>#content1-h">Nuestros Productos</a>
+                          <a class="dropdown-item" href="<?php echo $nosotros; ?>#header3-i">Nuestros Productos</a>
                         </div>
                       </li>
 

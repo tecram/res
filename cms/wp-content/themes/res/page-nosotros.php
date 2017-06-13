@@ -103,7 +103,7 @@ get_header(); ?>
 
 </section>
 
-<section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 60px; padding-bottom: 60px;">
+<section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 70px; padding-bottom: 70px;">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
