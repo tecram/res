@@ -46,7 +46,7 @@ global $youtube;
   <div class="col-md-4">
     <div class="box-module no-ovl row">
       <div class="text-center">
-        <h3><strong>MUCHO MAS<br>QUE UNA <br> CARNICERIA</strong></h3>
+        <h3><a href="/nosotros"><strong>MUCHO MAS<br>QUE UNA <br> CARNICERIA</strong></a></h3>
       </div>
       <img src="<?php echo DIR; ?>/assets/images/mucho-mas-que-una-carniceria.jpg" alt="" class="bg">
     </div>

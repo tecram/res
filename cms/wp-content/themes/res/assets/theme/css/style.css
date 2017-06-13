@@ -2299,3 +2299,8 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
     outline: none;
     font-weight: 700;
 }
+
+.box-module h3 a {
+  color: #002E5A !important;
+  text-decoration: none !important;
+}
