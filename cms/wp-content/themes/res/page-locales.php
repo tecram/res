@@ -142,6 +142,7 @@ $count=0;
             var title = marker[1];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
             var content = marker[1];
+            console.log(marker);
             var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
             
             marker1 = new google.maps.Marker({
@@ -152,7 +153,23 @@ $count=0;
                 icon: markerIcon
             });
 
+            /*var contentString = '<div class="mapInfoWindow"><h1>SUCURSAL</h1><img alt="" src="http://www.blogrecetas.com/files/2013/10/Depositphotos_2501949_m.jpg"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';*/
+            
+            /*var contentString = 'test';
+
+            var mapInfoWindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            marker1.addListener('click', function() {
+                infowindow.open(map, marker1);
+            });*/
+
+            
+
             gmarkers1.push(marker1);
+
+            
         }
 
         $('#type').on('change', function () {

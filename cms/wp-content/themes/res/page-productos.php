@@ -9,15 +9,10 @@
  * @package WordPress
  * @subpackage Twenty_Exchange
  * @since Twenty Fifteen 1.0
- * template Name: Nosotros
+ * template Name: Productos
  */
 
-get_header(); ?>
-
 <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar" id="header1-1" style="background-image: url(<?php echo DIR; ?>/assets/images/nosotros-2000x1333-76.png);">
-
-    
-
     <div class="mbr-table-cell">
 
         <div class="container">
@@ -30,79 +25,12 @@ get_header(); ?>
     </div>
 
     <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#content1-3"><i class="mbr-arrow-icon"></i></a></div>
-
 </section>
 
-<!-- <section class="mbr-section article mbr-section__container" id="content1-3" style="background-color: rgb(255, 255, 255); padding-top: 60px; padding-bottom: 0px;">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 lead"><p class="text-center"><strong>Nuestra Empresa. Somos lo que hacemos todos los días.</strong></p></div>
-        </div>
-    </div>
 
-</section> -->
 
-<section class="mbr-section article mbr-section__container" id="content1-4" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 lead"><p>RES es mucho más que una cadena de carnicerías. Es la reivindicación de un oficio, la valoración del</p><p>servicio y las ganas de elevar las expectativas de cada uno de nuestros clientes.</p></div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section-nopadding mbr-figure--caption-outside-bottom" id="image1-x">
-    <div class="mbr-figure">
-        <div><img src="<?php echo DIR; ?>/assets/images/valores5.png"></div>
-        
-    </div>
-</section>
-
-<section class="mbr-section article mbr-section__container" id="content1-a" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 40px;">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 lead"><p>Nos enorgullece la elección de cada uno de nuestros clientes, esa confianza nos impulsa a</p><p>desarrollar nuevos sistemas de eficiencia, control y desarrollo.</p></div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section article mbr-section__container" id="content1-b" style="background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 20px;">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 lead"><p><strong>Trazabilidad · Cadena de Valor</strong></p><p><strong>Capacitación y Formación Profesional</strong></p><p><strong>Integración de Procesos · Mejora Constante</strong></p></div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section article mbr-section__container" id="content1-c" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 60px;">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 lead"><p>Aspiramos a crear una experiencia de compra satisfactoria, superadora y personal. Creemos en la</p><p>fuerza de nuestra marca, en la calidad de nuestros productos y en el valor agregado que otorga</p><p>cada uno de los integrantes de nuestro equipo.</p></div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section article mbr-section__container" id="content1-e" style="background-color: rgb(0, 46, 89); padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px;">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 lead"><p><strong>Nuestro objetivo es el crecimiento sostenido de una idea,</strong></p><p><strong>de un sueño que se hace realidad cada vez</strong></p><p><strong>que nuestros productos llegan a la mesa de aquellos que nos eligen.</strong></p></div>
-        </div>
-    </div>
-
-</section>
-
-<?php get_footer(); ?>
-
-<!-- <section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 70px; padding-bottom: 70px;">
+<section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 70px; padding-bottom: 70px;">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -263,8 +191,6 @@ get_header(); ?>
     </div>
 </section>
 
-
-
 <?php get_template_part("parts/bottom"); ?>
 <?php get_footer(); ?>
 
@@ -325,5 +251,4 @@ get_header(); ?>
             $('.meat-module .oink-detail .content').html(oinkData[id]);
         });
     });
-</script> -->
-
+</script>

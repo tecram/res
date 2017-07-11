@@ -96,15 +96,15 @@ $youtube=get_field("youtube",4);
                       <li class="nav-item"><a class="nav-link link" href="<?php echo $locales; ?>">LOCALES</a></li>
                       <!-- <li class="nav-item dropdown"><a class="nav-link link" href="<?php echo $nosotros; ?>" aria-expanded="false">NOSOTROS</a></li> -->
 
-                      <li class="nav-item dropdown open">
-                        <a class="nav-link link dropdown-toggle" href="<?php echo $nosotros; ?>" data-toggle="dropdown-submenu" aria-expanded="true">NOSOTROS</a>
-                        <div class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link link" href="<?php echo $nosotros; ?>">NOSOTROS</a>
+                        <!-- <div class="dropdown-menu">
                           <a class="dropdown-item" href="<?php echo $nosotros; ?>">Nosotros</a>
                           <a class="dropdown-item" href="<?php echo $nosotros; ?>#content1-3">Nuestra Empresa</a>
                           <a class="dropdown-item" href="<?php echo $nosotros; ?>#header3-i">Nuestros Productos</a>
-                        </div>
+                        </div> -->
                       </li>
-
+                      <li class="nav-item"><a class="nav-link link" href="<?php echo $productos; ?>">PRODUCTOS</a></li>
                       <li class="nav-item"><a class="nav-link link" href="<?php echo $blog; ?>">BLOG</a></li>
                       <li class="nav-item"><a class="nav-link link" href="<?php echo $franquicias; ?>">FRANQUICIAS</a></li>
                       <li class="nav-item dropdown open">
