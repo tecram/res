@@ -78,7 +78,7 @@ $count=0;
 </section>
 <div class="clearfix"></div>
 
-<?php get_template_part("parts/bottom"); ?>
+<?php get_template_part("parts/bottom","mapa"); ?>
 
 <?php get_footer(); ?>
 
