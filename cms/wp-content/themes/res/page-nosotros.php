@@ -264,10 +264,10 @@ get_header(); ?>
 </section>
 
 
-
+-->
 <?php get_template_part("parts/bottom"); ?>
 <?php get_footer(); ?>
-
+<!--
 <script type="text/javascript">
     var cowData = {
         1:'<h3><span>1</span> Roast Beef</h3><p>Se cocina en estofados y guisos, de gran sabor y económico.</p>',

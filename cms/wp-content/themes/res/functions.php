@@ -346,6 +346,7 @@ function hide_editor() {
     	 	case 'page-franquicias.php':
     	 	case 'page-locales.php':
     	 	case 'page-nosotros.php':
+    	 	case 'page-productos.php':
     	 		remove_post_type_support('page', 'editor');
     	 		break;
     	 	default:

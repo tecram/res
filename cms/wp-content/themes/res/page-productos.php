@@ -11,6 +11,8 @@
  * @since Twenty Fifteen 1.0
  * template Name: Productos
  */
+get_header();
+?>
 
 <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar" id="header1-1" style="background-image: url(<?php echo DIR; ?>/assets/images/nosotros-2000x1333-76.png);">
     <div class="mbr-table-cell">

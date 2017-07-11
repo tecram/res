@@ -17,6 +17,7 @@ global $contacto;
 global $franquicias;
 global $locales;
 global $nosotros;
+global $productos;
 
 $home=get_permalink(4);
 $blog=get_permalink(10);
@@ -24,6 +25,7 @@ $contacto=get_permalink(14);
 $franquicias=get_permalink(12);
 $locales=get_permalink(6);
 $nosotros=get_permalink(8);
+$productos=get_permalink(48);
 
 global $facebook;
 global $instagram;
