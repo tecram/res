@@ -82,14 +82,14 @@ $count=0;
 
 <?php get_footer(); ?>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf0nrbD6gurYm4Cj3O9sfbkubEXZHB4tQ&v=3.0&sensor=true&language=ee" type="text/javascript"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf0nrbD6gurYm4Cj3O9sfbkubEXZHB4tQ&v=3.0&sensor=true&language=ee" type="text/javascript"></script> -->
 
 <script>
         var gmarkers1 = [];
         var markers1 = [];
-        var infowindow = new google.maps.InfoWindow({
+        /*var infowindow = new google.maps.InfoWindow({
             content: ''
-        });
+        });*/
 
         // Our markers
         markers1 = [
@@ -141,11 +141,15 @@ $count=0;
             var category = marker[4];
             var title = marker[1];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
-            var content = marker[1];
-            console.log(marker);
             var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
             
-            marker1 = new google.maps.Marker({
+            var contentString = '<div class="mapInfoWindow-' + title + '"><h1>SUCURSAL</h1><img alt="" src="http://www.blogrecetas.com/files/2013/10/Depositphotos_2501949_m.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+            
+            var mapInfoWindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker1 = new google.maps.Marker({
                 title: title,
                 position: pos,
                 category: category,
@@ -153,23 +157,11 @@ $count=0;
                 icon: markerIcon
             });
 
-            /*var contentString = '<div class="mapInfoWindow"><h1>SUCURSAL</h1><img alt="" src="http://www.blogrecetas.com/files/2013/10/Depositphotos_2501949_m.jpg"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';*/
-            
-            /*var contentString = 'test';
-
-            var mapInfoWindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            marker1.addListener('click', function() {
-                infowindow.open(map, marker1);
-            });*/
-
-            
-
             gmarkers1.push(marker1);
 
-            
+            marker1.addListener('click', function() {
+                mapInfoWindow.open(map, marker1);
+            });
         }
 
         $('#type').on('change', function () {
@@ -182,5 +174,6 @@ $count=0;
         });
 
         // Init map
-        initialize();
+        // initialize();
       </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf0nrbD6gurYm4Cj3O9sfbkubEXZHB4tQ&callback=initialize"></script>
