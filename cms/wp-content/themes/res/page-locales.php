@@ -98,9 +98,12 @@ $count=0;
         	$name=get_field("nombre");
         	$direccion=get_field("direccion");
         	$location=get_field("ubicacion");
+            $foto=get_field("foto");
+            $localimage=$foto["sizes"]["news-thumb"];
+            $descripcion=get_field("descripcion");
          ?>
 
-            ['<?php echo $count; ?>', '<?php echo $name; ?>', <?php echo $location["lat"]; ?>, <?php echo $location["lng"]; ?>],
+            ['<?php echo $count; ?>', '<?php echo $name; ?>', <?php echo $location["lat"]; ?>, <?php echo $location["lng"]; ?>, "<?php echo $direccion; ?>", "<?php echo $localimage; ?>", "<?php echo $descripcion; ?>"],
         <?php 
         		$count++;
         		endwhile; 
