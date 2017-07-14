@@ -2341,3 +2341,35 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 .nosotros-modulo-texto .text-content p {
     color: #002E5A;
 }
+
+#map-canvas .mapInfoWindow h1 {
+  font-size: 19px;
+  color: #002E5A;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#map-canvas .mapInfoWindow img {
+  max-width: 100%;
+  width: 230px;
+  height: auto;
+  margin: 15px auto;
+  color: #002E5A;
+  text-align: center;
+  display: block;
+}
+
+#map-canvas .mapInfoWindow .description {
+  margin: 0 20px;
+  color: #002E5A;
+  max-width: 100%;
+  width: 300px;
+  line-height: 18px;
+}
+
+#map-canvas .mapInfoWindow .address {
+  margin: 20px 0;
+  color: #002E5A;
+  text-align: center;
+  font-weight: bold;
+}

@@ -25,6 +25,7 @@ $point=new WP_Query($pointsarg);
 $count=0;
 
 ?>
+
 <section class="engine"><a rel="external" href="https://mobirise.com">best offline web maker software</a></section><section class="mbr-section mbr-after-navbar" id="form2-2j" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 40px;">
         <div class="mbr-section mbr-section__container mbr-section__container--middle">
         <div class="container">
@@ -82,8 +83,6 @@ $count=0;
 
 <?php get_footer(); ?>
 
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf0nrbD6gurYm4Cj3O9sfbkubEXZHB4tQ&v=3.0&sensor=true&language=ee" type="text/javascript"></script> -->
-
 <script>
         var gmarkers1 = [];
         var markers1 = [];
@@ -94,13 +93,12 @@ $count=0;
         // Our markers
         markers1 = [
         <?php if ( $point->have_posts() ) : while ( $point->have_posts() ) : $point->the_post();
-
-        	$name=get_field("nombre");
+            $name=get_field("nombre");
         	$direccion=get_field("direccion");
         	$location=get_field("ubicacion");
             $foto=get_field("foto");
             $localimage=$foto["sizes"]["news-thumb"];
-            $descripcion=get_field("descripcion");
+            /*$descripcion=get_field("descripcion");*/
          ?>
 
             ['<?php echo $count; ?>', '<?php echo $name; ?>', <?php echo $location["lat"]; ?>, <?php echo $location["lng"]; ?>, "<?php echo $direccion; ?>", "<?php echo $localimage; ?>", "<?php echo $descripcion; ?>"],
@@ -143,10 +141,12 @@ $count=0;
         function addMarker(marker) {
             var category = marker[4];
             var title = marker[1];
+            var image = marker[5];
+            var address = marker[4];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
             var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
-            
-            var contentString = '<div class="mapInfoWindow-' + title + '"><h1>SUCURSAL</h1><img alt="" src="http://www.blogrecetas.com/files/2013/10/Depositphotos_2501949_m.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+            console.log(marker);
+            var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.</p><p class="address">' + address + '</p>';
             
             var mapInfoWindow = new google.maps.InfoWindow({
                 content: contentString
