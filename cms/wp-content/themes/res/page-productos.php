@@ -200,19 +200,49 @@ get_header();
         <p class="subtitle">DE CARNE VACUNA, POLLO O CERDO</p>
         <p class="description">Se usan los cortes adecuados para cada tipo de milanesa. La carne es desgrasada, sin nervios y se usan huevos frescos y una cantidad de pan rallado acorde con la preparación hogareña de calidad.</p>
     </div>
-
     <div class="text-content">
-        <p class="title">- Milanesas</p>
-        <p class="subtitle">DE CARNE VACUNA, POLLO O CERDO</p>
-        <p class="description">Se usan los cortes adecuados para cada tipo de milanesa. La carne es desgrasada, sin nervios y se usan huevos frescos y una cantidad de pan rallado acorde con la preparación hogareña de calidad.</p>
+        <p class="title">- Matambre</p>
+        <p class="subtitle">DE CARNE VACUNA O DE POLLO</p>
+        <p class="description">Se venden arrollados, a la usanza argentina, crudos o cocidos. Son productos característicos de Res elaborados especialmente por nuestros carniceros.</p>
     </div>
-
-
+    <div class="text-content">
+        <p class="title">- Brochetes</p>
+        <p class="subtitle">DE LOMO O DE POLLO</p>
+        <p class="description">Preparados en nuestros locales por verdaderos especialistas. Usamos cubos de lomo, panceta, morrones de dos colores. Para las de pollo, sólo usamos supremas como materia prima. Son ideales para la parrilla.</p>
+    </div>
+    <div class="text-content">
+        <p class="title">- Embutidos</p>
+        <p class="subtitle">CHORIZO PURO CERDO · CHORIZO MEZCLA · MORCILLA ATADA · MORCILLA ROCA SALCHICHA PARRILLERA · SALCHICHA DE VIENA</p>
+        <p class="description">RES seleccionó a los mejores proveedores, conocedores del gusto argentino por estos productos y que ofrezcan las mayores garantías en cuanto a la calidad e inocuidad de cada especialidad.</p>
+    </div>
+    <div class="text-content">
+        <p class="title">- Achuras</p>
+        <p class="subtitle">MOLLEJAS, RIÑON Y CHINCHULINES</p>
+        <p class="description">Estas tres menudencias tienen en común que se consumen asadas a la parrilla y son las más populares en el mercado argentino.</p>
+    </div>
+    <div class="text-content">
+        <p class="title">- Hígado</p>
+        <p class="description">Se prepara a la plancha, salteado y rallado. Ideal para dietas ricas en hierro.</p>
+    </div>
+    <div class="text-content">
+        <p class="title">- Lengua</p>
+        <p class="description">Cocinada a la vinagreta es es un verdadero clásico de la cocina argentina. Su terneza, sabor y consistencia permiten consumirla en forma de sándwiches.</p>
+    </div>
+    <div class="text-content">
+        <p class="title">- Mondongo y rabo</p>
+        <p class="description">Ambas achuras sirven para preparar platos tradicionales y guisos a la cacerola.</p>
+    </div>
+    <div class="text-content">
+        <p class="title">- RES Burger</p>
+        <p class="description">Hamburguesas de producción propia, supercongeladas y libres de gluten. Nuestras hamburguesas son elaboradas con los más altos estándares higiénico-sanitarios y producidas exclusivamente con carne vacuna y un porcentaje de grasa inferior al 20%.</p>
+    </div>
     <h1>Otras Especies</h1>
     <div class="text-content">
         <p class="title">- Lechón, cordero, chivito y conejo</p>
         <p class="description">Son carnes que apuntan a nichos gourmet que enriquecen el abanico de opciones que ofrece RES.</p>
     </div>
+
+    
 </section>
 
 <?php get_template_part("parts/bottom"); ?>

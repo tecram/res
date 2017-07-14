@@ -2334,12 +2334,17 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
     color: #002E5A;
 }
 
-.nosotros-modulo-texto .text-content .subtitle {
+.nosotros-modulo-texto .text-content p {
     color: #002E5A;
 }
 
-.nosotros-modulo-texto .text-content p {
-    color: #002E5A;
+@media (max-width: 769px) {
+     .nosotros-modulo-texto .text-content .subtitle {
+      font-size: 18px;
+    }
+    .nosotros-modulo-texto h1, .nosotros-modulo-texto .text-content .title {
+      font-size: 26px;
+    }
 }
 
 #map-canvas .mapInfoWindow h1 {
@@ -2357,6 +2362,9 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   color: #002E5A;
   text-align: center;
   display: block;
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
 }
 
 #map-canvas .mapInfoWindow .description {
