@@ -25,7 +25,7 @@ $contacto=get_permalink(14);
 $franquicias=get_permalink(12);
 $locales=get_permalink(6);
 $nosotros=get_permalink(8);
-$productos=get_permalink(48);
+$productos=get_permalink(118);
 
 global $facebook;
 global $instagram;

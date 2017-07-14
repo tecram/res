@@ -97,11 +97,12 @@ $count=0;
         	$direccion=get_field("direccion");
         	$location=get_field("ubicacion");
             $foto=get_field("foto");
-            $localimage=$foto["sizes"]["news-thumb"];
-            /*$descripcion=get_field("descripcion");*/
+            $localimage=$foto["sizes"]["tooltip"];
+            $descripcion=get_field("descripcion");
+            $cleantext=str_replace(array("\n\r","\n","\r"), "<br/>", $descripcion);
          ?>
 
-            ['<?php echo $count; ?>', '<?php echo $name; ?>', <?php echo $location["lat"]; ?>, <?php echo $location["lng"]; ?>, "<?php echo $direccion; ?>", "<?php echo $localimage; ?>", "<?php echo $descripcion; ?>"],
+            ['<?php echo $count; ?>', '<?php echo $name; ?>', <?php echo $location["lat"]; ?>, <?php echo $location["lng"]; ?>, "<?php echo $direccion; ?>", "<?php echo $localimage; ?>", "<?php echo $cleantext; ?>"],
         <?php 
         		$count++;
         		endwhile; 
@@ -145,8 +146,9 @@ $count=0;
             var address = marker[4];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
             var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
-            console.log(marker);
-            var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.</p><p class="address">' + address + '</p>';
+            //console.log(marker);
+            var text = marker[6];
+            var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">'+ text +'</p><p class="address">' + address + '</p>';
             
             var mapInfoWindow = new google.maps.InfoWindow({
                 content: contentString
