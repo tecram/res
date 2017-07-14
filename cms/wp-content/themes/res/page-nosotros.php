@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar" id="header1-1" style="background-image: url(<?php echo DIR; ?>/assets/images/nosotros-2000x1333-76.png);">
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar" id="header1-1" style="background-image: url(<?php echo DIR; ?>/assets/images/somosloquehacemos.jpg);">
 
     
 
@@ -265,7 +265,7 @@ get_header(); ?>
 
 
 -->
-<?php get_template_part("parts/bottom"); ?>
+<!-- <?php get_template_part("parts/bottom"); ?> -->
 <?php get_footer(); ?>
 <!--
 <script type="text/javascript">

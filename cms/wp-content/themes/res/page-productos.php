@@ -32,7 +32,7 @@ get_header();
 
 
 
-<section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 70px; padding-bottom: 70px;">
+<!-- <section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 70px; padding-bottom: 70px;">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -41,7 +41,7 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="mbr-section article mbr-section__container" id="content1-j" style="background-color: rgb(84, 113, 143); padding-top: 40px; padding-bottom: 40px;">
 
@@ -190,6 +190,28 @@ get_header();
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section__container nosotros-modulo-texto container">
+    <h1>Productos Preparados</h1>
+    <div class="text-content">
+        <p class="title">- Milanesas</p>
+        <p class="subtitle">DE CARNE VACUNA, POLLO O CERDO</p>
+        <p class="description">Se usan los cortes adecuados para cada tipo de milanesa. La carne es desgrasada, sin nervios y se usan huevos frescos y una cantidad de pan rallado acorde con la preparación hogareña de calidad.</p>
+    </div>
+
+    <div class="text-content">
+        <p class="title">- Milanesas</p>
+        <p class="subtitle">DE CARNE VACUNA, POLLO O CERDO</p>
+        <p class="description">Se usan los cortes adecuados para cada tipo de milanesa. La carne es desgrasada, sin nervios y se usan huevos frescos y una cantidad de pan rallado acorde con la preparación hogareña de calidad.</p>
+    </div>
+
+
+    <h1>Otras Especies</h1>
+    <div class="text-content">
+        <p class="title">- Lechón, cordero, chivito y conejo</p>
+        <p class="description">Son carnes que apuntan a nichos gourmet que enriquecen el abanico de opciones que ofrece RES.</p>
     </div>
 </section>
 

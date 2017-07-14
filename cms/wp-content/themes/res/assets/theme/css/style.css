@@ -2308,3 +2308,36 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   color: #002E5A !important;
   text-decoration: none;
 }
+
+.nosotros-modulo-texto {
+  
+}
+
+.nosotros-modulo-texto h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #002E5A;
+}
+
+.nosotros-modulo-texto .text-content {
+  padding-left: 40px;
+}
+
+.nosotros-modulo-texto .text-content .title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #002E5A;
+}
+
+.nosotros-modulo-texto .text-content .subtitle {
+    font-weight: 700;
+    color: #002E5A;
+}
+
+.nosotros-modulo-texto .text-content .subtitle {
+    color: #002E5A;
+}
+
+.nosotros-modulo-texto .text-content p {
+    color: #002E5A;
+}
