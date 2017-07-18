@@ -822,7 +822,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .mbr-table-md-up {
       display: table; }
       .mbr-table-md-up .mbr-table-cell {
-/*        display: table-cell;*/ }
+        display: table-cell; }
       .mbr-table-md-up .mbr-table-cell + .mbr-table-cell {
         padding-top: 0; } }
 
@@ -2240,7 +2240,7 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   }
   .blog-small-module img {
     width: 26px;
-    height: auto;
+    height: 26px;
   }
 }
 

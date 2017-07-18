@@ -368,7 +368,7 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size('news-big', 550, 400, TRUE);
 	add_image_size('news-thumb', 300, 200, TRUE);
 	add_image_size('news-interna', 1200, 500, TRUE);
-	add_image_size('tooltip', 230, 153, TRUE);
+	add_image_size('tooltip', 250, 225, TRUE);
 
 }
 
