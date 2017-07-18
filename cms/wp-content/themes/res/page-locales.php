@@ -114,7 +114,7 @@ $count=0;
         /**
          * Function to init map
          */
-
+        var mapInfoWindow;
         function initialize() {
             var mapStyles = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}];
             var center = new google.maps.LatLng(-34.5759525, -58.4868778);
@@ -129,6 +129,7 @@ $count=0;
                 mapTypeId: google.maps.MapTypeId.TERRAIN,
                 styles: mapStyles
             };
+            mapInfoWindow = new google.maps.InfoWindow();
 
             map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
             for (i = 0; i < markers1.length; i++) {
@@ -146,14 +147,15 @@ $count=0;
             var address = marker[4];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
             var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
+<<<<<<< Updated upstream
             //console.log(marker);
             var text = marker[6];
             var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">'+ text +'</p><p class="address">' + address + '</p>';
+=======
             
-            var mapInfoWindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
+            var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.</p><p class="address">' + address + '</p>';
+>>>>>>> Stashed changes
+            
             var marker1 = new google.maps.Marker({
                 title: title,
                 position: pos,
@@ -163,8 +165,9 @@ $count=0;
             });
 
             gmarkers1.push(marker1);
-
+            
             marker1.addListener('click', function() {
+                mapInfoWindow.setContent(contentString);
                 mapInfoWindow.open(map, marker1);
             });
         }
