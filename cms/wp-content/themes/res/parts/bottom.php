@@ -9,16 +9,20 @@ $postlist = new WP_Query($artargs);
 global $facebook;
 global $instagram;
 global $youtube;
+
+global $locales;
+global $contacto;
+global $nosotros;
 ?>
 
 <div class="margin-bottom-m">
   <div class="col-md-4">
     <div class="box-module row">
       <div class="text-center">
-        <h3><a href="/nosotros"><strong>ACÁ<br>ESTAMOS</strong></h3></h3>
+        <h3><a href="<?php echo $locales; ?>"><strong>ACÁ<br>ESTAMOS</strong></h3></h3>
       </div>
       <div class="text-center">
-        <p><a href="/nosotros">Encontrá tu sucursal</a></p>
+        <p><a href="<?php echo $locales; ?>">Encontrá tu sucursal</a></p>
       </div>
       <img src="<?php echo DIR; ?>/assets/images/aca-estamos.jpg" alt="" class="bg">
     </div>
@@ -46,10 +50,10 @@ global $youtube;
   <div class="col-md-4">
     <div class="box-module row">
       <div class="text-center">
-        <h3><a href="/contacto/#work"><strong>HACEMOS<br>ESCUELA</strong></a></h3>
+        <h3><a href="<?php echo $contacto; ?>#work"><strong>HACEMOS<br>ESCUELA</strong></a></h3>
       </div>
       <div class="text-center">
-        <p><a href="/contacto/#work">Trabaja con nosotros</a></p>
+        <p><a href="<?php echo $contacto; ?>#work">Trabaja con nosotros</a></p>
       </div>
       <img src="<?php echo DIR; ?>/assets/images/trabaja.jpg" alt="" class="bg">
     </div>

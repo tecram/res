@@ -9,6 +9,8 @@ $postlist = new WP_Query($artargs);
 global $facebook;
 global $instagram;
 global $youtube;
+
+global $contacto;
 ?>
 
 <div class="margin-bottom-m">
@@ -43,10 +45,10 @@ global $youtube;
   <div class="col-md-4">
     <div class="box-module row">
       <div class="text-center">
-        <h3><a href="/contacto/#work"><strong>HACEMOS<br>ESCUELA</strong></a></h3>
+        <h3><a href="<?php echo $contacto; ?>#work"><strong>HACEMOS<br>ESCUELA</strong></a></h3>
       </div>
       <div class="text-center">
-        <p><a href="/contacto/#work">Trabaja con nosotros</a></p>
+        <p><a href="<?php echo $contacto; ?>#work">Trabaja con nosotros</a></p>
       </div>
       <img src="<?php echo DIR; ?>/assets/images/trabaja.jpg" alt="" class="bg">
     </div>
