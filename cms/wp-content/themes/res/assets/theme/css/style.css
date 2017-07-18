@@ -822,7 +822,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .mbr-table-md-up {
       display: table; }
       .mbr-table-md-up .mbr-table-cell {
-        /*display: table-cell;*/ }
+/*        display: table-cell;*/ }
       .mbr-table-md-up .mbr-table-cell + .mbr-table-cell {
         padding-top: 0; } }
 
