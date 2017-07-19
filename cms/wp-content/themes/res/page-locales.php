@@ -147,14 +147,9 @@ $count=0;
             var address = marker[4];
             var pos = new google.maps.LatLng(marker[2], marker[3]);
             var markerIcon = '<?php echo DIR; ?>/assets/images/marker.png';
-<<<<<<< Updated upstream
             //console.log(marker);
             var text = marker[6];
             var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">'+ text +'</p><p class="address">' + address + '</p>';
-=======
-            
-            var contentString = '<div class="mapInfoWindow"><h1>' + title + '</h1><img alt="" src="' + image + '"><p class="description">Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.Vivamus urna ante, tempus in ex nec, volutpat dapibus ipsum. Nulla quis aliquet lectus. Nam egestas eleifend commodo. Ut rhoncus congue libero, in auctor erat fringilla et.</p><p class="address">' + address + '</p>';
->>>>>>> Stashed changes
             
             var marker1 = new google.maps.Marker({
                 title: title,
