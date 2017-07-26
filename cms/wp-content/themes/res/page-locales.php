@@ -65,7 +65,7 @@ $count=0;
             $location=get_field("ubicacion");
             $direccion=get_field("direccion");
          ?>
-            <option value="" data-lat="<?php echo $location["lat"]; ?>" data-long="<?php echo $location["lng"]; ?>"><?php echo $name; ?> - <?php echo $direccion; ?></option>
+            <option value="<?php echo $count; ?>" data-lat="<?php echo $location["lat"]; ?>" data-long="<?php echo $location["lng"]; ?>"><?php echo $name; ?> - <?php echo $direccion; ?></option>
         <?php 
             $count++;
             endwhile; 
@@ -156,7 +156,8 @@ $count=0;
                 position: pos,
                 category: category,
                 map: map,
-                icon: markerIcon
+                icon: markerIcon,
+                content: contentString
             });
 
             gmarkers1.push(marker1);
@@ -167,16 +168,22 @@ $count=0;
             });
         }
 
+        function openInfowindow(content, mp, mark) {
+            mapInfoWindow.setContent(content);
+            mapInfoWindow.open(mp, mark);
+        }
+
         $('#type').on('change', function () {
             var elemSelected = $('#type option:selected');
             var lat = $(elemSelected).data('lat');
             var long = $(elemSelected).data('long');
+            var elemId = $(elemSelected).val();
 
             map.setCenter(new google.maps.LatLng(lat, long));
             map.setZoom(16);
+            
+            openInfowindow(gmarkers1[elemId].content, map, gmarkers1[elemId]);
         });
 
-        // Init map
-        // initialize();
       </script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf0nrbD6gurYm4Cj3O9sfbkubEXZHB4tQ&callback=initialize"></script>
