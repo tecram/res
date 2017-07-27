@@ -2381,3 +2381,7 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
   text-align: center;
   font-weight: bold;
 }
+
+.itm-blog img {
+  height: auto !important;
+}
