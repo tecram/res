@@ -23,10 +23,10 @@
 define('DB_NAME', 'wi491448_res');
 
 /** MySQL database username */
-define('DB_USER', 'wi491448_resusr');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'pwDRes2coins');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
