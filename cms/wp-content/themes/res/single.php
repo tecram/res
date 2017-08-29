@@ -45,7 +45,8 @@ $image=get_field("imagen_destacada");
                 <div class="col-md-12"><!-- SIDEBAR CHANGE TO col-md-10 -->
                   <div class="row">
                     <div class="itm-blog-detail">
-                      <div class="img" style="background: url('<?php echo $image["url"];?>') no-repeat center center;"></div>
+                      <!-- <div class="img" style="background: url('<?php echo $image["url"];?>') no-repeat center center;"></div> -->
+                      <img src="<?php echo $image["url"];?>">
                      <?php the_content(); ?>
                     </div>
                   </div>

@@ -2383,7 +2383,11 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 }
 
 .itm-blog img {
+  height: auto !important;
+}
+
+.itm-blog-detail img {
   width: 100%;
-  height: 100%;
-  background-size: contain;
+  height: auto;
+  margin-bottom: 40px;
 }
